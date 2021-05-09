@@ -1,0 +1,13 @@
+[Unit]
+Description="RadIO"
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+Restart=always
+RestartSec=10
+ExecStart=/usr/local/bin/rad_io
+
+[Install]
+WantedBy=default.target
